@@ -27,6 +27,7 @@ nav {
   nav ul.closed {
     display: none; }
 
+/* Main content */
 main .figures {
   display: flex;
   flex-wrap: wrap; }
@@ -35,5 +36,29 @@ main .figures {
 main .quote span {
   display: block;
   text-align: right; }
+
+@media (min-width: 480px) {
+  #menu-toggle {
+    display: none; }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between; }
+    nav .top {
+      flex-grow: 1; }
+    nav ul.closed {
+      display: flex;
+      justify-content: space-evenly;
+      flex-grow: 1; }
+
+  #hero {
+    display: flex; }
+    #hero * {
+      max-width: 50%; }
+
+  main .figures figure {
+    min-width: 25%; }
+  main .cta {
+    display: flex; } }
 
 /*# sourceMappingURL=styles.css.map */

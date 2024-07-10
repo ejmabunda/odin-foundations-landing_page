@@ -49,6 +49,7 @@ nav {
     }
 }
 
+/* Main content */
 main {
     .figures {
         display: flex;
@@ -63,6 +64,47 @@ main {
         span {
             display: block;
             text-align: right;
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .top {
+            flex-grow: 1;
+        }
+
+        ul.closed {
+            display: flex;
+            justify-content: space-evenly;
+            flex-grow: 1;
+        }
+    }
+
+    #hero {
+        display: flex;
+
+        * {
+            max-width: 50%;
+        }
+    }
+
+    main {
+        .figures {
+            figure {
+                min-width: 25%;
+            }
+        }
+
+        .cta {
+            display: flex;
         }
     }
 }
