@@ -9,3 +9,60 @@ $body-text: 18px;
 $main-text: 48px;
 $logo-text: 24px;
 $header-text: 36px;
+
+/* Boilerplate styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: $body-text;
+}
+
+#menu-toggle {
+    height: 50px;
+    width: 50px;
+    background-color: $black;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        
+        #logo {
+            font-size: $logo-text;
+        }
+    }
+    
+    ul {
+        list-style: none;
+    }
+
+    ul.closed {
+        display: none;
+    }
+}
+
+main {
+    .figures {
+        display: flex;
+        flex-wrap: wrap;
+        
+        figure {
+            min-width: 50%;
+        }
+    }
+
+    .quote {
+        span {
+            display: block;
+            text-align: right;
+        }
+    }
+}

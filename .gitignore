@@ -1,0 +1,5 @@
+# Ignore SASS files
+*.scss
+*.sass
+*.map
+.sass-cache

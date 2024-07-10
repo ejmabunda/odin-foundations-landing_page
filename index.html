@@ -1,54 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <meta name="description" content="Landing page of a cool website.">
-        <title>Landing Page</title>
-    </head>
 
-    <body>
-        <header>
-            <nav>
-                <div id="logo"></div>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </nav>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Landing page of a cool website.">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Landing Page</title>
+</head>
 
-            <section id="hero">
+<body>
+    <header>
+        <nav>
+            <div class="top">
+                <div id="logo">Header logo</div>
+                <div id="menu-toggle"></div>
+            </div>
+
+            <ul id="nav-links" class="closed">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+
+        <section id="hero">
+            <div class="left">
                 <h1>This website is awesome</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet, quos eaque error suscipit molestiae cum labore nostrum! Iusto quibusdam expedita cupiditate sed rem omnis quis saepe blanditiis eaque dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet, quos eaque error suscipit
+                    molestiae cum labore nostrum! Iusto quibusdam expedita cupiditate sed rem omnis quis saepe
+                    blanditiis eaque dolorem?</p>
                 <a href="#">Sign up</a>
-                <img src="" alt="this is a placeholder for an image" width="100">
-            </section>
-        </header>
+            </div>
+            <img src="" alt="this is a placeholder for an image" width="100">
+        </section>
+    </header>
 
-        <main>
-            <section>
-                <h2>Some random information</h2>
-                <figure><img src="" alt="image"></figure>
-                <figure><img src="" alt="image"></figure>
-                <figure><img src="" alt="image"></figure>
-                <figure><img src="" alt="image"></figure>
-            </section>
+    <main>
+        <section>
+            <h2>Some random information</h2>
+            <div class="figures">
+                <figure>
+                    <img src="" alt="image">
+                    <figcaption>Caption goes here</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="" alt="image">
+                    <figcaption>Caption goes here</figcaption>
+                </figure>
 
-            <section class="quote">
-                <p class="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui inventore iusto earum rem quis, ab quibusdam impedit, consectetur accusantium quae quas velit eum magnam nulla vero odit distinctio, aperiam ea.
-                Ab reprehenderit hic inventore quibusdam commodi itaque omnis adipisci voluptatibus impedit repellat, perferendis alias quae quo sunt asperiores quasi ad nesciunt quod fugiat quis ea expedita. Ipsum tenetur illo quam. <span class="author">- Thor, God of Thunder</span></p>
-            </section>
+                <figure>
+                    <img src="" alt="image">
+                    <figcaption>Caption goes here</figcaption>
+                </figure>
 
-            <section class="cta">
-                <h2>Call to action! It's time!</h2>
-                <p>Sign up for our product by clicking that button right over there!</p>
-                <a href="#">Sign up</a>
-            </section>
+                <figure>
+                    <img src="" alt="image">
+                    <figcaption>Caption goes here</figcaption>
+                </figure>
+            </div>
+        </section>
 
-            <footer>
-                <p>Copyright &copy; The Odin Project 2021</p>
-            </footer>
-        </main>
-    </body>
+        <section class="quote">
+            <p class="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui inventore iusto earum rem
+                quis, ab quibusdam impedit, consectetur accusantium quae quas velit eum magnam nulla vero odit
+                distinctio, aperiam ea.
+                Ab reprehenderit hic inventore quibusdam commodi itaque omnis adipisci voluptatibus impedit repellat,
+                perferendis alias quae quo sunt asperiores quasi ad nesciunt quod fugiat quis ea expedita. Ipsum tenetur
+                illo quam. <span class="author">- Thor, God of Thunder</span></p>
+        </section>
+
+        <section class="cta">
+            <h2>Call to action! It's time!</h2>
+            <p>Sign up for our product by clicking that button right over there!</p>
+            <a href="#">Sign up</a>
+        </section>
+
+        <footer>
+            <p>Copyright &copy; The Odin Project 2021</p>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
 </html>

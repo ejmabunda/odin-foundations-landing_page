@@ -1,0 +1,39 @@
+/* Design colors and font styles */
+/* Boilerplate styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 18px; }
+
+#menu-toggle {
+  height: 50px;
+  width: 50px;
+  background-color: #1f2937; }
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column; }
+  nav .top {
+    display: flex;
+    justify-content: space-between; }
+    nav .top #logo {
+      font-size: 24px; }
+  nav ul {
+    list-style: none; }
+  nav ul.closed {
+    display: none; }
+
+main .figures {
+  display: flex;
+  flex-wrap: wrap; }
+  main .figures figure {
+    min-width: 50%; }
+main .quote span {
+  display: block;
+  text-align: right; }
+
+/*# sourceMappingURL=styles.css.map */
