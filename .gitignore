@@ -3,3 +3,6 @@
 *.sass
 *.map
 .sass-cache
+
+# Ignore Python compiled files
+my_venv/
