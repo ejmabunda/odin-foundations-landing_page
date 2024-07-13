@@ -71,22 +71,24 @@ header {
         text-align: center;
         margin-top: 2rem;
 
-        h1 {
-            margin-bottom: 1rem;
-            font-size: $header-text;
-            font-weight: extra-bold;
-        }
-        p {
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        a {
-            background-color: $blue;
-            margin-bottom: 1rem;
-            padding: .5rem 1rem;
-            display: inline-block;
-            border-radius: 5px;
-            font-weight: bold;
+        .left {
+            h1 {
+                margin-bottom: 1rem;
+                font-size: $header-text;
+                font-weight: extra-bold;
+            }
+            p {
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+            a {
+                background-color: $blue;
+                margin-bottom: 1rem;
+                padding: .5rem 1rem;
+                display: inline-block;
+                border-radius: 5px;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -176,6 +178,9 @@ footer {
 
 // Large screens
 @media (min-width: 480px) {    
+    $padding-y: 5rem;
+    $padding-y-large: 10rem;
+
     header,
     .figures,
     .quote,
@@ -201,37 +206,53 @@ footer {
         }
     
         #hero {
+            padding-top: $padding-y;
+            padding-bottom: $padding-y;
             display: flex;
             text-align: left;
-    
+            gap: $padding;
+            align-items: center;
+
             * {
-                max-width: 50%;
+                flex: 1;
             }
         }
     }
 
     main {
+        h2 {
+            padding-top: $padding-y;
+        }
         .figures {
+            padding-bottom: $padding-y;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr;
+        }
 
-            figure {
-                width: unset;
-            }
+        .quote {
+            padding: 3rem;
         }
 
         .cta {
+            margin: $padding-y $padding-y-large;
+            border-radius: 10px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             
             .left {
-                text-align-last: left;
-            }
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
 
-            a {
-                display: inline;
-                align-items: center;
+                * {
+                    text-align: left;
+                    padding: 0;
+                    margin: 0;
+                }
+
             }
         }
     }
